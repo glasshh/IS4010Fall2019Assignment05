@@ -1,8 +1,10 @@
 /*
- * IS4010 Fal 2019
  * Assignment 05
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Hannah Glass
+ * Description: This program takes a football score and returns a string describing that score.
+ * Due Date: 10/03/2019
+ * Course: IS4010-001 
+ * email: glasshh@mail.uc.edu
  */
 package footballFun;
 
@@ -26,6 +28,33 @@ public class FootballFun {
 		}
 	}
 	public static String translateScore (int score) {
-		return "";
+		
+		if (score == 2) {
+			return "safety";
+		}
+		if (score == 3) {
+			return "field goal";
+		}
+		if (score == 6) {
+			return "touchdown";
+		}
+		if (score == 7) {
+			return "touchdown and extra point";
+		}
+		if (score == 8) {
+			return "touchdown and 2-point conversion";
+		}
+		if (score ==-1) {
+			return " ";
+		}
+		if (score ==1) {
+			return "invalid";
+		}
+		if (score ==10) {
+			return "you must be playing Quidditch";
+		}
+		else
+			return null;
+		
 	}
 }
