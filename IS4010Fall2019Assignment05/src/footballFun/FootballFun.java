@@ -1,5 +1,5 @@
 /*
- * Assignment 05
+ * Assignment 05 
  * Hannah Glass
  * Description: This program takes a football score and returns a string describing that score.
  * Due Date: 10/03/2019
@@ -29,32 +29,30 @@ public class FootballFun {
 	}
 	public static String translateScore (int score) {
 		
-		if (score == 2) {
+		if (score == 2 ) {
 			return "safety";
-		}
+		} 
 		if (score == 3) {
 			return "field goal";
 		}
-		if (score == 6) {
+		if (score == 6 ) {
 			return "touchdown";
-		}
+		} 
 		if (score == 7) {
 			return "touchdown and extra point";
 		}
-		if (score == 8) {
+		if (score == 8 ) {
 			return "touchdown and 2-point conversion";
+		} 
+		if (score == -1) {
+			return "";
 		}
-		if (score ==-1) {
-			return " ";
-		}
-		if (score ==1) {
+		if (score == 1 ) {
 			return "invalid";
+		} 
+		if (score == 10) {
+			return "you must be playing Quidditch ";
 		}
-		if (score ==10) {
-			return "you must be playing Quidditch";
-		}
-		else
-			return null;
-		
+		return null;
 	}
 }
